@@ -1,0 +1,40 @@
+<resources>
+    <color name="blue">#449def</color>
+    <color name="gray">#c2c2c2</color>
+    <color name="black">#343434</color>
+    <color name="red">#ef4444</color>
+    <color name="purple">#a276eb</color>
+    <color name="brown">#ab9760</color>
+    <color name="green">#70c656</color>
+    <color name="yellow">#f3ae1b</color>
+    <color name="trans">#00000000</color>
+    
+    <color name="splashScreen_background">#FFFFFF</color>
+    <color name="menu_background">#8FBE44</color>
+    <color name="draw_background">#7CD1CE</color>
+    <color name="finalStage_background">#82CAC9</color>
+    <color name="credits_background">#49BDA3</color>
+    
+    <color name="home_title">#2A77BC</color>
+    <color name="home_titleShadow">#808284</color>
+    
+    <!-- Level Selection Activity -->
+    <color name="levelSelection_background">#FCBB69</color>
+    <color name="levelSelection_title">#FFFFFF</color>
+    <color name="levelSelection_titleShadow">#56585D</color>
+    <color name="levelSelection_lblCurrentLevelNumber">#FFFFFF</color>
+    <color name="levelSelection_lblCurrentLevelStatus">#EF4136</color>
+    
+    <!-- Screen Selection Activity -->
+    <color name="screenSelection_background">#83B731</color>
+    <color name="screenSelection_title">#FFFFFF</color>
+    
+    <!--  Menu Tittle-->
+    <color name="menu_tittleFill">#1D77BD</color>
+    <color name="menu_tittleBorder">#FFFFFF</color>
+    <color name="menu_tittleShadow">#B3B4B6</color>
+    
+    <!--  Final Level -->
+    <color name="scrollview_background">#71B5AF</color>
+    
+</resources>

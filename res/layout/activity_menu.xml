@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_home_android"
+    android:orientation="vertical" >
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imgBorder" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:adjustViewBounds="true" -->
+<!--         android:scaleType="fitXY" -->
+<!--         android:src="@drawable/bg_home" /> -->
+
+    <ImageButton
+        android:id="@+id/menu_btnNext"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:onClick="onClickListener"
+        android:src="@drawable/icon_next_green" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/logo_trazos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/app_logo_content_description"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_tittle"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" >
+
+                <ImageView
+                    android:id="@+id/imgMenuLogo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_menu_logo"
+                    android:visibility="invisible" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_layoutOptions"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/menu_btnResetApp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:onClick="onClickListener"
+            android:scaleType="fitCenter"
+            android:src="@drawable/repetir"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@+id/menu_btnSound"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/toggle_button_sound"
+            android:onClick="onClickListener"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/menu_btnCredits"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:onClick="onClickListener"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_credits_green"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/menu_btnConfig"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            android:onClick="onClickListener"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_configuration_green" />
+    </LinearLayout>
+
+</RelativeLayout>

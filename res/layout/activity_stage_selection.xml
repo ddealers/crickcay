@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/gt.com.santillana.trazos.android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".StageSelectionActivity" >
+
+	<ImageView
+		android:id="@+id/stagescreen_ivBorder"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scaleType="fitXY"
+		android:src="@null" />
+	<!-- android:src="@drawable/submenu" -->
+
+	<ImageView
+	    android:id="@+id/imageView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/arbol" />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scaleType="fitXY"
+	    android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+	    android:src="@drawable/rejas" />
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin" >
+
+		<com.digitalgeko.mobile.android.ui.DGTextView
+		    android:id="@+id/levelSelect_lblTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="@string/l01_title"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="@color/screenSelection_title"
+		    android:textSize="75sp"
+		    android:visibility="invisible"
+		    app:font="@string/font_porkys" />
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv02"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_marginLeft="230dp"
+		    android:layout_marginTop="210dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+		<TableLayout
+		    android:id="@+id/tableLayout1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@+id/tl_buttons"
+		    android:layout_alignRight="@+id/tl_buttons"
+		    android:layout_below="@+id/levelSelect_lblTitle"
+		    android:layout_marginLeft="35dp"
+		    android:layout_marginRight="35dp"
+		    android:layout_marginTop="600dp">
+
+			<TableRow
+				android:id="@+id/tableRow4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" >
+
+				<TableLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginLeft="15dp"
+					android:layout_weight="4"
+					android:gravity="center"
+					android:weightSum="3" >
+
+					<TableRow
+						android:id="@+id/tableRow1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:layout_marginTop="5dp"
+						android:layout_weight="1"
+						android:gravity="center_horizontal|center" >
+					</TableRow>
+
+					<TableRow
+						android:id="@+id/tableRow2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:layout_marginTop="5dp"
+						android:layout_weight="1" >
+					</TableRow>
+
+					<TableRow
+						android:id="@+id/tableRow3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:layout_marginTop="5dp"
+						android:layout_weight="1"
+						android:gravity="center" >
+
+						<com.digitalgeko.mobile.android.ui.StageStatusView
+							android:id="@+id/stageSelection_iv07"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:gravity="center"
+							android:onClick="onStageClickListener" >
+						</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+						<com.digitalgeko.mobile.android.ui.StageStatusView
+							android:id="@+id/stageSelection_iv08"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:gravity="center"
+							android:onClick="onStageClickListener" >
+						</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+						<com.digitalgeko.mobile.android.ui.StageStatusView
+							android:id="@+id/stageSelection_iv09"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:gravity="center"
+							android:onClick="onStageClickListener" >
+						</com.digitalgeko.mobile.android.ui.StageStatusView>
+					</TableRow>
+				</TableLayout>
+			</TableRow>
+		</TableLayout>
+
+		<LinearLayout
+			android:id="@+id/tl_buttons"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="45dp"
+			android:layout_marginRight="15dp"
+			android:gravity="right" >
+
+			<ImageButton
+				android:id="@+id/stageSelection_btnBack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:background="@null"
+				android:onClick="onMenuButtonsClickListener"
+				android:src="@drawable/icon_back_green" />
+
+			<ImageButton
+				android:id="@+id/stageSelection_btnHome"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:onClick="onMenuButtonsClickListener"
+				android:src="@drawable/icon_home_green" />
+		</LinearLayout>
+
+		<ImageView
+		    android:id="@+id/stageSelection_finalStage"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_weight="1"
+		    android:clickable="false"
+		    android:gravity="center"
+		    android:onClick="onFinalLevelClickListener"
+		    android:layout_marginLeft="480dp"
+		    android:layout_marginTop="180dp"
+		    android:padding="5dp"
+		    android:src="@drawable/ic_lock_big" />
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv01"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    
+		    android:layout_marginLeft="360dp"
+		    android:layout_marginTop="320dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv03"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_marginLeft="300dp"
+		    android:layout_marginTop="50dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv06"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/levelSelect_lblTitle"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv05"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_alignRight="@+id/stageSelection_iv06"
+		    android:layout_below="@+id/levelSelect_lblTitle"
+		    android:layout_marginRight="50dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+		<com.digitalgeko.mobile.android.ui.StageStatusView
+		    android:id="@+id/stageSelection_iv04"
+		    android:layout_width="145dp"
+		    android:layout_height="145dp"
+		    android:layout_alignTop="@+id/levelSelect_lblTitle"
+		    android:layout_centerHorizontal="true"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:onClick="onStageClickListener" >
+		</com.digitalgeko.mobile.android.ui.StageStatusView>
+
+	</RelativeLayout>
+
+</RelativeLayout>

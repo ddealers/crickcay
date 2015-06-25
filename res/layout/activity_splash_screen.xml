@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/splashScreen_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/splashscreen_santillanaLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_santillana" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/splashscreen_loading1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cero_star"
+                android:enabled="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_loading" />
+
+            <ImageView
+                android:id="@+id/splashscreen_loading2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cero_star"
+                android:enabled="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_loading" />
+
+            <ImageView
+                android:id="@+id/splashscreen_loading3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cero_star"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_loading" />
+
+            <ImageView
+                android:id="@+id/splashscreen_loading4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cero_star"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_loading" />
+
+            <ImageView
+                android:id="@+id/splashscreen_loading5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cero_star"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_loading" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

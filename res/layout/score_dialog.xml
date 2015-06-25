@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/dialog_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	tools:ignore="UseCompoundDrawables" >
+
+	<ImageView
+		android:id="@+id/scoreDialog_bgCircle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/circle_scores" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/scoreDialog_layoutStars"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+
+			<ImageView
+				android:id="@+id/scoreDialog_ivStar1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="60dp"
+				android:layout_weight="1"
+				android:src="@drawable/estrella_1_silueta" />
+
+			<ImageView
+				android:id="@+id/scoreDialog_ivStar2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:src="@drawable/estrella_2_silueta" />
+
+			<ImageView
+				android:id="@+id/scoreDialog_ivStar3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="60dp"
+				android:layout_weight="1"
+				android:src="@drawable/estrella_3_silueta" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="135dp"
+			android:layout_marginLeft="80dp"
+			android:layout_marginRight="80dp"
+			android:orientation="horizontal" >
+
+			<ImageButton
+				android:id="@+id/scoreDialog_btnRestart"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@android:color/transparent"
+				android:contentDescription="@string/cero_star"
+				android:scaleType="fitCenter"
+				android:src="@drawable/score_icono_retry" />
+
+			<ImageButton
+				android:id="@+id/scoreDialog_btnPaintMode"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@android:color/transparent"
+				android:contentDescription="@string/cero_star"
+				android:scaleType="fitCenter"
+				android:src="@drawable/selector_score_icon_draw" />
+
+			<ImageButton
+				android:id="@+id/scoreDialog_bntNextStage"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@android:color/transparent"
+				android:contentDescription="@string/cero_star"
+				android:scaleType="fitCenter"
+				android:src="@drawable/selector_score_icon_next" />
+		</LinearLayout>
+	</LinearLayout>
+	<!-- </FrameLayout> -->
+
+</RelativeLayout>

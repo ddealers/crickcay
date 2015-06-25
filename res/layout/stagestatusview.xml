@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <ImageView
+        android:id="@+id/stageStatus_ivLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:visibility="visible" />
+
+   <RelativeLayout
+       android:id="@+id/stageStatus_UnlockedViewLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:visibility="invisible" >
+
+       <ImageView
+           android:id="@+id/stageStatus_ivPreviewImageBackground"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:adjustViewBounds="true"
+           android:src="@drawable/scores_circle_bg" />
+
+       <ImageView
+           android:id="@+id/stageStatus_ivPreviewImage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:adjustViewBounds="true"
+           android:antialias="true"
+           android:scaleType="fitCenter"
+           android:src="@drawable/scores_circle_bg" />
+
+       <ImageView
+           android:id="@+id/stageStatus_ivFranja_roja"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:adjustViewBounds="true"
+           android:scaleType="fitCenter"
+           android:src="@drawable/scores_franja_roja" />
+
+       <ImageView
+           android:id="@+id/stageStatus_ivStar01"
+           android:layout_width="31dp"
+           android:layout_height="31dp"
+           android:layout_alignBottom="@id/stageStatus_ivFranja_roja"
+           android:layout_alignLeft="@id/stageStatus_ivFranja_roja"
+           android:adjustViewBounds="true"
+           android:src="@drawable/score_stars" />
+
+       <ImageView
+           android:id="@+id/stageStatus_ivStar02"
+           android:layout_width="31dp"
+           android:layout_height="31dp"
+           android:layout_above="@id/stageStatus_ivStar01"
+           android:layout_alignLeft="@id/stageStatus_ivFranja_roja"
+           android:adjustViewBounds="true"
+           android:src="@drawable/score_stars" />
+
+       <ImageView
+           android:id="@+id/stageStatus_ivStar03"
+           android:layout_width="31dp"
+           android:layout_height="31dp"
+           android:layout_above="@id/stageStatus_ivStar02"
+           android:layout_alignLeft="@id/stageStatus_ivFranja_roja"
+           android:adjustViewBounds="true"
+           android:src="@drawable/score_stars" />
+   </RelativeLayout>
+
+</RelativeLayout>

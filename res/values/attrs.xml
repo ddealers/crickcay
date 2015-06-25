@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="DGTextView">
+		<attr name="font" format="string" />
+		<attr name="strokeWidth" format="integer" />
+		<attr name="strokeColor" format="integer" />
+		<attr name="enableCutOffBorderFix" format="boolean" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="padding_small">8dp</dimen>
+	<dimen name="padding_medium">8dp</dimen>
+	<dimen name="padding_large">16dp</dimen>
+	<dimen name="stroke">3dp</dimen>
+	<dimen name="crayon">250dp</dimen>
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+	
+	<dimen name="fragment__level__font_size">105sp</dimen>
+	<dimen name="fragment__level__font_size__little_world">95sp</dimen>
+	<dimen name="fragment__level__font_size__dinosaurs_valley">75sp</dimen>
+
+</resources>

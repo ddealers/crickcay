@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/gt.com.santillana.trazos.android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:antialias="true"
+	android:orientation="vertical" >
+
+	<!-- The frame layout is here since we will be showing either the empty view or the list view. -->
+
+	<RelativeLayout
+		android:id="@+id/levelSelect_layoutCover"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<ImageView
+		    android:id="@+id/levelSelect_ivBackground"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginBottom="30dp"
+		    android:layout_marginRight="100dp"
+		    android:layout_marginTop="30dp"
+		    android:antialias="true"
+		    android:background="@drawable/circulo"
+		    android:onClick="onLevelClickListener"
+		    android:paddingRight="35dp"
+		    android:scaleType="fitCenter" />
+
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="100dp"
+		    android:layout_marginLeft="60dp"
+		    android:layout_marginTop="80dp"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/resortes_book"
+		    android:visibility="invisible" />
+
+		<com.digitalgeko.mobile.android.ui.DGTextView
+			android:id="@+id/levelSelect_lblTitleShadow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/levelSelect_ivBackground"
+			android:layout_alignRight="@+id/levelSelect_ivBackground"
+			android:layout_alignTop="@id/levelSelect_ivBackground"
+			android:layout_marginLeft="85dp"
+			android:layout_marginTop="30dp"
+			android:alpha="0.3"
+			android:text="@string/app_name"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/levelSelection_titleShadow"
+			android:textSize="@dimen/fragment__level__font_size"
+			app:font="@string/font_porkys" />
+
+		<com.digitalgeko.mobile.android.ui.DGTextView
+			android:id="@+id/levelSelect_lblTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/levelSelect_ivBackground"
+			android:layout_alignRight="@+id/levelSelect_ivBackground"
+			android:layout_alignTop="@id/levelSelect_ivBackground"
+			android:layout_marginLeft="75dp"
+			android:layout_marginTop="20dp"
+			android:text="@string/app_name"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/levelSelection_title"
+			android:textSize="@dimen/fragment__level__font_size"
+			app:font="@string/font_porkys"
+			app:strokeColor="@android:color/black"
+			app:strokeWidth="5" />
+
+		<ImageView
+		    android:id="@+id/levelSelect_ivLevelImage"
+		    android:layout_width="350dp"
+		    android:layout_height="350dp"
+		    android:layout_alignBottom="@id/levelSelect_ivBackground"
+		    android:layout_alignRight="@id/levelSelect_ivBackground"
+		    android:layout_marginBottom="45dp"
+		    android:layout_marginRight="100dp"
+		    android:adjustViewBounds="true"
+		    android:antialias="true"
+		    android:maxHeight="300dp"
+		    android:src="@drawable/l01_portada"
+		    android:visibility="invisible" />
+
+		<RelativeLayout
+			android:id="@+id/levelSelect_vgLevelScore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginBottom="100dp" >
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:orientation="vertical" >
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<ImageView
+		    android:id="@+id/levelmenu_trophyBackground"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignRight="@+id/levelSelect_ivBackground"
+		    android:layout_marginRight="71dp"
+		    android:src="@drawable/levelmenu_circleblue"
+		    android:visibility="invisible" />
+
+		<ImageView
+		    android:id="@+id/levelSelect_ivTrophy"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignRight="@+id/levelmenu_trophyBackground"
+		    android:antialias="true"
+		    android:scaleType="fitCenter"
+		    android:src="@drawable/trofeo" />
+
+		<com.digitalgeko.mobile.android.ui.DGTextView
+		    android:id="@+id/levelSelection_lblLevelProgress"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/levelSelect_ivLevelImage"
+		    android:layout_below="@+id/levelmenu_trophyBackground"
+		    android:layout_marginRight="71dp"
+		    android:layout_marginTop="38dp"
+		    android:text="9/9"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="@color/levelSelection_lblCurrentLevelStatus"
+		    android:textSize="@dimen/fragment__level__font_size"
+		    app:font="@string/font_porkys"
+		    app:strokeColor="@android:color/white"
+		    app:strokeWidth="16" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

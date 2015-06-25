@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="fragment__level__font_size">55sp</dimen>
+    <dimen name="fragment__level__font_size__dinosaurs_valley">40sp</dimen>
+
+</resources>
