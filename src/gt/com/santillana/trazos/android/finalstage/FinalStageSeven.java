@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-
+import gt.com.santillana.trazos.android.models.PuzzlePiece;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -71,9 +71,8 @@ public class FinalStageSeven extends Activity {
 				cardNames[i] = cards[j]+"_1";
 			}
 			puzzlePiece = (ImageView) cardViews[i];
-			puzzlePiece.setTag(cards[j]);
+			puzzlePiece.setTag( new PuzzlePiece(cards[j], false) );
 		}
-		Collections.shuffle(Arrays.asList(cardNames));
 	}
 
 	@Override
@@ -86,8 +85,9 @@ public class FinalStageSeven extends Activity {
 		super.onResume();
 	}
 	
-	public void onGuessClickListener(View v)
+	public void onGuessClickListener(View v) throws InterruptedException
 	{	
+		if(current != null) previous = current;
 		switch(v.getId()){
 			case R.id.puzzle001:
 				current = (ImageView) findViewById(R.id.puzzle001);
@@ -121,6 +121,15 @@ public class FinalStageSeven extends Activity {
 				current = (ImageView) findViewById(R.id.puzzle008);
 				current.setImageResource(pieces.get(cardNames[7]));
 				break;
+		}
+		if(previous != null){
+			PuzzlePiece currentpp = (PuzzlePiece) current.getTag();
+			PuzzlePiece curentprev = (PuzzlePiece) previous.getTag();
+			if( (currentpp.getPair_id())  != curentprev.getPair_id()){
+				Thread.sleep(2000);
+				current.setImageResource(R.drawable.lvl7_tarjeta);
+				previous.setImageResource(R.drawable.lvl7_tarjeta);
+			}
 		}
 		log("Tag:" + current.getTag());
 	}

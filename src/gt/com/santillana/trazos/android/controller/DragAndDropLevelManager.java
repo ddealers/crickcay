@@ -18,11 +18,11 @@ public class DragAndDropLevelManager {
 		case AppConstants.LEVEL_01:
 			return new FinalStageBackgroundImage(R.drawable.l01_final_back, width, height);
 		case AppConstants.LEVEL_02:
-			return new FinalStageBackgroundImage(R.drawable.l02_final_back, width, height);
+			return new FinalStageBackgroundImage(R.drawable.lvl2_back_final, width, height);
 		case AppConstants.LEVEL_03:
 			return new FinalStageBackgroundImage(R.drawable.back, width, height);
 		case AppConstants.LEVEL_04:
-			return new FinalStageBackgroundImage(R.drawable.l04_final_back, width, height);
+			return new FinalStageBackgroundImage(R.drawable.lvl4_back, width, height);
 		case AppConstants.LEVEL_05:
 			return new FinalStageBackgroundImage(R.drawable.l05_final_back, width, height);
 		default:
@@ -115,24 +115,30 @@ public class DragAndDropLevelManager {
 
 	private static Vector<DragAndDropShape> buildLevel02() {
 		Vector<DragAndDropShape> shapes = new Vector<DragAndDropShape>();
-		shapes.add(new DragAndDropShape(R.drawable.l_2__1_final, new DropTarget(R.drawable.l_2__1_final_white, 375.272, 16.783,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_1, new DropTarget(R.drawable.lvl2_1_white, 375.272, 16.783,
 				143.495 + 5, 101.826 + 5), R.raw.l2_1));// luciernaga
-		shapes.add(new DragAndDropShape(R.drawable.l_2__2_final, new DropTarget(R.drawable.l_2__2_final_white, 63.68, 5.004,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_2, new DropTarget(R.drawable.lvl2_2_white, 63.68, 5.004,
 				139.629 + 5, 141.021 + 5), R.raw.l2_2));// mariquita
-		shapes.add(new DragAndDropShape(R.drawable.l_2__3_final, new DropTarget(R.drawable.l_2__3_final_white, 267.636, 109.639,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_3, new DropTarget(R.drawable.lvl2_3_white, 267.636, 109.639,
 				193.055 + 5, 191.04 + 5), R.raw.l2_3));// mariposa
-		shapes.add(new DragAndDropShape(R.drawable.l_2__4_final, new DropTarget(R.drawable.l_2__4_final_white, 648.896, 105.549,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_4, new DropTarget(R.drawable.lvl2_4_white, 648.896, 105.549,
 				159.298 + 5, 137.99 + 5), R.raw.l2_4));// abeja
-		shapes.add(new DragAndDropShape(R.drawable.l_2__5_final, new DropTarget(R.drawable.l_2__5_final_white, 382.833, 428.355,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_5, new DropTarget(R.drawable.lvl2_5_white, 382.833, 428.355,
 				236.13 + 5, 137.123 + 5), R.raw.l2_5));// gusano
-		shapes.add(new DragAndDropShape(R.drawable.l_2__6_final, new DropTarget(R.drawable.l_2__6_final_white, 497.606, 154.977,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_6, new DropTarget(R.drawable.lvl2_6_white, 497.606, 154.977,
 				145.77 + 5, 177.537 + 5), R.raw.l2_6));// saltamontes
-		shapes.add(new DragAndDropShape(R.drawable.l_2__7_final, new DropTarget(R.drawable.l_2__7_final_white, 731.65, 467.688,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_7, new DropTarget(R.drawable.lvl2_7_white, 731.65, 467.688,
 				128.858 + 5, 106.233 + 5), R.raw.l2_7));// lombris
-		shapes.add(new DragAndDropShape(R.drawable.l_2__8_final, new DropTarget(R.drawable.l_2__8_final_white, 63.4, 440.818,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_8, new DropTarget(R.drawable.lvl2_8_white, 63.4, 440.818,
 				120.276 + 5, 112.258 + 5), R.raw.l2_8));// hormiga
-		shapes.add(new DragAndDropShape(R.drawable.l_2__9_final, new DropTarget(R.drawable.l_2__9_final_white, 55.727, 236.574,
+		shapes.add(new DragAndDropShape(R.drawable.lvl2_9, new DropTarget(R.drawable.lvl2_9_white, 55.727, 236.574,
 				200, 147), R.raw.l2_9));// caracol
+		//shapes.add(new DragAndDropShape(R.drawable.lvl2_10, new DropTarget(R.drawable.lvl2_10, 55.727, 236.574,
+		//		200, 147), R.raw.l2_9));// caracol
+		//shapes.add(new DragAndDropShape(R.drawable.lvl2_11, new DropTarget(R.drawable.lvl2_11, 75.727, 236.574,
+		//		200, 147), R.raw.l2_9));// caracol
+		//shapes.add(new DragAndDropShape(R.drawable.lvl2_12, new DropTarget(R.drawable.lvl2_12, 95.727, 236.574,
+		//		200, 147), R.raw.l2_9));// caracol
 
 		return shapes;
 	}
@@ -163,23 +169,23 @@ public class DragAndDropLevelManager {
 
 	private static Vector<DragAndDropShape> buildLevel04() {
 		Vector<DragAndDropShape> shapes = new Vector<DragAndDropShape>();
-		shapes.add(new DragAndDropShape(R.drawable.l4_1_final, new DropTarget(R.drawable.l4_1_final_white, 471.012, 450.458,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_1, new DropTarget(R.drawable.lvl4_1_white, 471.012, 450.458,
 				221.442 + 5, 131.998 + 5), R.raw.l4_1, true));// planta cruz
-		shapes.add(new DragAndDropShape(R.drawable.l4_2_final, new DropTarget(R.drawable.l4_2_final_white, 218.555, 0,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_2, new DropTarget(R.drawable.lvl4_2_white, 218.555, 0,
 				222.18 + 5, 213.298), R.raw.l4_2));// aerodactilo
-		shapes.add(new DragAndDropShape(R.drawable.l4_3_final, new DropTarget(R.drawable.l4_3_final_white, 192.957, 231.482,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_3, new DropTarget(R.drawable.lvl4_3_white, 192.957, 231.482,
 				244.013 + 5, 205.626), R.raw.l4_3));// triceratops
-		shapes.add(new DragAndDropShape(R.drawable.l4_4_final, new DropTarget(R.drawable.l4_4_final_white, 741.221, 442.575,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_4, new DropTarget(R.drawable.lvl4_4_white, 741.221, 442.575,
 				154.921 + 5, 130.1), R.raw.l4_4));// monta�as
-		shapes.add(new DragAndDropShape(R.drawable.l4_5_final, new DropTarget(R.drawable.l4_5_final_white, 74.18, 475.07,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_5, new DropTarget(R.drawable.lvl4_5_white, 74.18, 475.07,
 				88.806 + 5, 89.511), R.raw.l4_5));// cocodrilo deforme
-		shapes.add(new DragAndDropShape(R.drawable.l4_6_final, new DropTarget(R.drawable.l4_6_final_white, 676.303, 435.335,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_6, new DropTarget(R.drawable.lvl4_6_white, 676.303, 435.335,
 				89.666 + 5, 100.355 + 5), R.raw.l4_6));// dino morado
-		shapes.add(new DragAndDropShape(R.drawable.l4_7_final, new DropTarget(R.drawable.l4_7_final_white, 223.519, 393.94,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_7, new DropTarget(R.drawable.lvl4_7_white, 223.519, 393.94,
 				250.429 + 8, 188.941 + 5), R.raw.l4_7));// pleciosaurio
-		shapes.add(new DragAndDropShape(R.drawable.l4_8_final, new DropTarget(R.drawable.l4_8_final_white, 36.897, 228.957,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_8, new DropTarget(R.drawable.lvl4_8_white, 36.897, 228.957,
 				163.986 + 5, 231.747 + 5), R.raw.l4_8, true));// tiranosaurio
-		shapes.add(new DragAndDropShape(R.drawable.l4_9_final, new DropTarget(R.drawable.l4_9_final_white, 504.202, 280.029,
+		shapes.add(new DragAndDropShape(R.drawable.lvl4_9, new DropTarget(R.drawable.lvl4_9_white, 504.202, 280.029,
 				348.212 + 5, 149.926 + 5), R.raw.l4_9));// planta carnivora
 
 		return shapes;

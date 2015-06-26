@@ -84,12 +84,15 @@ public class NavigationUtils {
 		
 		switch (levelId) {
 		case AppConstants.LEVEL_01:
-			intent = new Intent(activity, FinalStageOne.class);
-			activity.startActivityForResult(intent, 1);
-			break;
+			//intent = new Intent(activity, FinalStageOne.class);
+			//activity.startActivityForResult(intent, 1);
+			//break;
 		case AppConstants.LEVEL_02:
 		case AppConstants.LEVEL_03:
 		case AppConstants.LEVEL_04:
+			intent = new Intent(activity, FinalStageBase.class);
+			activity.startActivityForResult(intent, 1);
+			break;
 		case AppConstants.LEVEL_05:
 			intent = new Intent(activity, FinalStageSeven.class);
 			activity.startActivityForResult(intent, 1);
