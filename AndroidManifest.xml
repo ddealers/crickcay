@@ -9,6 +9,7 @@
 		android:targetSdkVersion="17" />
 
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
 	
 	<application
 		android:icon="@drawable/ic_launcher"
@@ -59,6 +60,14 @@
 			android:label="@string/title_activity_final_level"
 			android:screenOrientation="landscape" >
 		</activity>
+		<activity 
+		    android:name="gt.com.santillana.trazos.android.finalstage.FinalStageOne"
+		    android:label="@string/title_activity_final_level"
+		    android:screenOrientation="landscape"></activity>
+		<activity 
+		    android:name="gt.com.santillana.trazos.android.finalstage.FinalStageSeven"
+		    android:label="@string/title_activity_final_level"
+		    android:screenOrientation="landscape"></activity>
 		<activity
 			android:name="gt.com.santillana.trazos.android.CreditsActivity"
 			android:label="@string/title_activity_configuration"
